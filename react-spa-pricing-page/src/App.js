@@ -8,7 +8,7 @@ const stageApi = new StageApi(
     // Do not use a read-write key on the frontend application.
     // Update this in the project .env file
     accessToken: process.env.REACT_APP_STAGE_READ_ONLY_API_KEY,
-    basePath: 'https://api.heystage.dev/sdk-api',
+    basePath: 'https://api.heystage.com/sdk-api',
     baseOptions: {
       headers: {
         accept: "application/vnd.heystage.v1+json",
