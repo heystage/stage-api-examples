@@ -44,7 +44,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className='plan-container'>        
-        {plans && plans.slice(0, 3).map(plan => 
+        {plans && plans.map(plan => 
           <div key={plan.identifier} className='plan-item'>
             <div className='plan-name'>{plan.name}</div>
             <div className='plan-divider' />
