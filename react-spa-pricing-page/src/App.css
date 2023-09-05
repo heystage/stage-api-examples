@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -20,7 +20,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -35,4 +34,69 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.plan-container {
+  width: 100%;
+  min-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.plan-item {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+}
+.plan-name {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.plan-description {
+  height: 60px;
+  font-size: 14px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.plan-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  padding: 20px;
+
+}
+.plan-feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.plan-pricing {
+  height: 75px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  padding-top: 25px;
+  text-align: center;
+}
+.plan-divider {
+  width: 100%;
+  border-top: 1px solid white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.plan-purchase {
+  height: 50px;
+  border-radius: 0;
+  cursor: pointer;
+  font-weight: bold;
 }
