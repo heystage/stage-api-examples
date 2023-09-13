@@ -34,13 +34,14 @@ This demo was built using NodeJS and React. In order to run this demo applicatio
 _Before we can run this demo application we'll need to integrate Stripe with our Stage Account. This is a fairly straight forward and easy process that should only take a minute or two._
 
 1. First login to your Stripe account and toggle "Test mode" on located at the top right of the page.
-<p align="center"><img src=".images/stripe_ref_1.png"  height="100" width="auto"></p>
+<p align="center"><img src=".images/stripe_ref_1.png"  height="100" width="auto" /></p>
 
 2. Navigate to -- _Developers > API Keys_
 3. At the bottom of the page you'll see **Restricted Keys**, create a new one.
-<p align="center"><img src=".images/stripe_ref_2.png"  height="100" width="auto"></p>
+<p align="center"><img src=".images/stripe_ref_2.png"  height="100" width="auto" /></p>
 
 4. Give the key a name "Stage Demo App" and give the following resources **Write** permissions.
+
    - Customers
    - Products
    - Checkout Sessions
@@ -48,16 +49,20 @@ _Before we can run this demo application we'll need to integrate Stripe with our
    - Subscriptions
    - Usage Records
    - Webhook Endpoints
-     _These permissions are required in order to let Stage integrate and manage Stripe automatically._
-5. Now we just need to add this key to your Stage account.
+
+   At the bottom of the page click "**Create key**"
+
+   **_These permissions are required in order to let Stage integrate and manage Stripe automatically._**
+
+5. Add this key to your Stage account.
 Click the "Reveal test key" button to view your newly created key and copy it.
-<p align="center"><img src=".images/stripe_ref_3.png"  height="100" width="auto"></p>
+<p align="center"><img src=".images/stripe_ref_3.png"  height="100" width="auto" /></p>
 
 6. Login to your Stage account: https://app.heystage.com
 7. Navigate to **Developers > Integrations** page.
 8. Under "Stripe for Stage" click the **Connect** button.
 9. Set the Type to "Automated" and paste your Stripe restricted key into the box and **Save**
-<p align="center"><img src=".images/stage_ref_1.png"  height="300" width="auto"></p>
+<p align="center"><img src=".images/stage_ref_1.png"  height="300" width="auto" /></p>
 
 10. That's it. You've successfully set up Stage with Stripe _(in test mode)_.
 
@@ -68,7 +73,8 @@ Click the "Reveal test key" button to view your newly created key and copy it.
 _In order to run this Demo Application we'll need to create 2 api keys within Stage. One for our frontend client and one for the backend server that this demo uses._
 
 1. Login to your Stage account: https://app.heystage.com
-2. Navidate to the **Developers** page.
+   - **1a.** _Create some plans and add features to them. This demo will only work if you have existing plans. Make sure the plans are in a "published" state. By default, new plans are put in a "draft" state._
+2. Navigate to the **Developers** page.
 3. Under **API Keys**, here you'll generate 2 keys.
 
    - Give the first key **Read** permissions.
