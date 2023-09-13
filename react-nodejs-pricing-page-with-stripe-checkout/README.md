@@ -41,6 +41,7 @@ _Before we can run this demo application we'll need to integrate Stripe with our
 <p align="center"><img src=".images/stripe_ref_2.png"  height="100" width="auto"></p>
 
 4. Give the key a name "Stage Demo App" and give the following resources **Write** permissions.
+
    - Customers
    - Products
    - Checkout Sessions
@@ -48,8 +49,10 @@ _Before we can run this demo application we'll need to integrate Stripe with our
    - Subscriptions
    - Usage Records
    - Webhook Endpoints
-     _These permissions are required in order to let Stage integrate and manage Stripe automatically._
-5. Now we just need to add this key to your Stage account.
+
+   _These permissions are required in order to let Stage integrate and manage Stripe automatically._
+
+5. Add this key to your Stage account.
 Click the "Reveal test key" button to view your newly created key and copy it.
 <p align="center"><img src=".images/stripe_ref_3.png"  height="100" width="auto"></p>
 
@@ -68,7 +71,7 @@ Click the "Reveal test key" button to view your newly created key and copy it.
 _In order to run this Demo Application we'll need to create 2 api keys within Stage. One for our frontend client and one for the backend server that this demo uses._
 
 1. Login to your Stage account: https://app.heystage.com
-2. Navidate to the **Developers** page.
+2. Navigate to the **Developers** page.
 3. Under **API Keys**, here you'll generate 2 keys.
 
    - Give the first key **Read** permissions.
